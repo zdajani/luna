@@ -16,4 +16,5 @@
 
 body {
 	font-family: helvetica;
+	background-image: image-url("space.png");
 }
