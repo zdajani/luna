@@ -1,3 +1,5 @@
+<h1>LUNA</h1>
+
 <object data="<%= asset_path 'page1.png' %>" alt="Seats" type="image/png" usemap="#Map1">
  <map name="Map1">
    <a href="seats/1/passengers/new" shape="rect" coords="287,62,311,86">Seat1</a>
@@ -11,8 +13,16 @@
  </map>
 </object>
 
+Passengers: 
 
-<h1>LUNA</h1>
+<% @seats.each do |seat| %>
+  <% if seat.passenger %>
+    <%= seat.name %>
+    <%= seat.passenger.full_name %> 
+  <% end %>
+<% end %>
 
-<%= link_to "Book Seat", href="seats/1/passengers/new" %>
+
+
+
 
