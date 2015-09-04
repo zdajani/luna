@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'seats#index'
   
   resources :seats do
-    resources :passenger
+    resources :passengers
   end
   
 
