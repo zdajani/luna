@@ -1,1 +1,5 @@
-<%= link_to "Confirm", new_seat_passenger(seat) %>
+<%=form_for [@seat, @passenger] do |f| %>
+<%=f.label :full_name, "Full Name" %>
+<%=f.text_field :full_name %>
+<%= f.submit 'Next' %>
+<% end %>
