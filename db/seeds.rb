@@ -10,5 +10,9 @@ Seat.create([
   {name: 'A1'},
   {name: 'A2'},
   {name: 'B1'},
-  {name: 'B2'}
+  {name: 'B2'},
+  {name: 'C1'},
+  {name: 'C2'},
+  {name: 'D1'},
+  {name: 'D2'}
   ])
