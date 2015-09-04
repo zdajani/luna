@@ -1,12 +1,11 @@
-<object data="<%= asset_path 'page1.png' %>" alt="Seats" type="image/png" usemap="#Map1">
- <map name="Map1">
-   <a href="/seats/1/passenger/new" shape="rect" coords="287,62,311,86">Seat1</a>
-   <a href="/seats/2/passenger/new" shape="rect" coords="334,62,358,87">Seat2</a>
-   <a href="/seats/3/passenger/new" shape="rect" coords="289,92,311,115">Seat3</a>
-   <a href="/seats/4/passenger/new" shape="rect" coords="336,91,359,116">Seat4</a>
-   <a href="/seats/5/passenger/new" shape="rect" coords="290,163,315,186">Seat5</a>
-   <a href="/seats/6/passenger/new" shape="rect" coords="337,163,361,185">Seat6</a>
-   <a href="/seats/7/passenger/new" shape="rect" coords="292,191,315,214">Seat7</a>
-   <a href="/seats/8/passenger/new" shape="rect" coords="341,191,361,215">Seat8</a>
+<%= image_tag 'page1.png', usemap: "#seatmap" %>
+ <map name="seatmap">
+   <area href="/seats/1/passenger/new" shape="rect" coords="287,62,311,86">
+   <area href="/seats/2/passenger/new" shape="rect" coords="334,62,358,87">
+   <area href="/seats/3/passenger/new" shape="rect" coords="289,92,311,115">
+   <area href="/seats/4/passenger/new" shape="rect" coords="336,91,359,116">
+   <area href="/seats/5/passenger/new" shape="rect" coords="290,163,315,186">
+   <area href="/seats/6/passenger/new" shape="rect" coords="337,163,361,185">
+   <area href="/seats/7/passenger/new" shape="rect" coords="292,191,315,214">
+   <area href="/seats/8/passenger/new" shape="rect" coords="341,191,361,215">
  </map>
-</object>
