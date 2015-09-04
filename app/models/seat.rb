@@ -1,5 +1,7 @@
 class Seat < ActiveRecord::Base
 
+  belongs_to :passenger
+
   after_initialize :init
 
   def init
