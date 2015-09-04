@@ -1,5 +1,13 @@
-<%=form_for [@seat, @passenger] do |f| %>
-<%=f.label :full_name, "Full Name" %>
-<%=f.text_field :full_name %>
-<%= f.submit 'Next' %>
-<% end %>
+<div class="bookingform">
+<h5>
+	You are a step away from booking a once-in-a-lifetime opportunity! 
+	<p>Please provide your details below:</p>
+</h5>
+<h4>
+	<%=form_for [@seat, @passenger] do |f| %>
+		<%=f.label :full_name, "Full Name" %>
+		<%=f.text_field :full_name %>
+		<%= f.submit 'Next' %>
+	<% end %>
+</h4>
+</div>
