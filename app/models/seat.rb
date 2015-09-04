@@ -8,8 +8,8 @@ class Seat < ActiveRecord::Base
     self.available = true
   end
 
-  def book
-    self.available = false
+  def book(passenger_id)
+    self.update(available: false, passenger_id: passenger_id)
   end
 
 end

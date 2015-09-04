@@ -9,8 +9,15 @@ describe Seat do
   end
 
   it 'can be booked' do
-    subject.book
+    subject.book(passenger.id)
     expect(subject.available?).to eq false
+  end
+
+  let(:passenger) { Passenger.create(full_name: "N. Armstrong") }
+
+  it 'should be booked with a passenger' do 
+    subject.book(passenger.id)
+    expect(subject.passenger).to eq passenger
   end
 
 end
